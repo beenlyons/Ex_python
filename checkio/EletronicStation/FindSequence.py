@@ -14,9 +14,9 @@ def check(matrix, x, y, dx, dy):
     for i in range(0, 3):
         x += dx
         y += dy
+        # 越界则返回false
         if x >= len(matrix) or x < 0:
             return False
-
         if y >= len(matrix[0]) or y < 0:
             return False
 
